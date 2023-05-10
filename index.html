@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Juros Simples</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Calculadora de Juros Simples</h1>
+    </header>
+
+    <div class="form">
+      <div class="form-group">
+        <label for="txtvalorinicial">Valor Inicial (R$)</label>
+        <input type="number" id="txtvalorinicial" placeholder="Digite o valor inicial">
+      </div>
+
+      <div class="form-group">
+        <label for="txttaxa">Taxa (%)</label>
+        <input type="number" id="txttaxa" placeholder="Digite a taxa de juros">
+      </div>
+
+      <div class="form-group">
+        <label for="txtperiodo">Período (meses)</label>
+        <input type="number" id="txtperiodo" placeholder="Digite o período em meses">
+      </div>
+
+      <div class="form-group">
+        <button id="btnCalcular"><i class="fas fa-calculator"></i> Calcular</button>
+      </div>
+
+      <div class="result">
+        <div class="result-group">
+          <label for="txtjuros">Valor do Juros (R$)</label>
+          <input type="text" id="txtjuros" readonly>
+        </div>
+
+        <div class="result-group">
+          <label for="txttotal">Valor Total (R$)</label>
+          <input type="text" id="txttotal" readonly>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Desenvolvido por Lenilson Soares <i class="fab fa-codepen"></i></p>
+    </footer>
+  </div>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
